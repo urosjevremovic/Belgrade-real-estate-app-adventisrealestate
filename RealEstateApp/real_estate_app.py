@@ -4,17 +4,17 @@ import csv
 
 
 def main():
-    tip = input("Da li tražite stan na prodaju ili na iznajmljivanje?\n1.Kupovina, 2.Iznajmljivanje")
+    tip = input("Da li tražite stan na prodaju ili na iznajmljivanje?\n1.Kupovina, 2.Iznajmljivanje ")
     if int(tip) == 1:
         tip_rec = 'prodaja'
     else:
         tip_rec = 'najam'
-    naselje = input("Unesite ime naselja: ")
-    opstina = input("Unesite ime opštine: ")
+    naselje = input("Unesite ime naselja(Moguće je ostaviti prazno): ")
+    opstina = input("Unesite ime opštine(Moguće je ostaviti prazno): ")
     tip_nekretnine = input("Izaberite broj tipa nekretnine tako što ćete ukucati:\n 1.kuća, 2. stan, 3.apartman, "
-                           "4. poslovni prostor, 5. zemljište, 6. garaža")
-    cena_min = input("Minimalna cena nekretnine: ")
-    cena_max = input("Maksimalna cena nekretnine: ")
+                           "4. poslovni prostor, 5. zemljište, 6. garaža ")
+    cena_min = input("Minimalna cena nekretnine(izražena u eurima): ")
+    cena_max = input("Maksimalna cena nekretnine(izražena u eurima): ")
     povrsina_min = input("Minimalna kvadratura: ")
     maksimalna_kvadratura = input("Maksimalna kvadratura: ")
     page_num = 0
