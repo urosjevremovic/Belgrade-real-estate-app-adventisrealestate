@@ -24,7 +24,7 @@ file for easier browsing.
 from setuptools import setup
 
 setup(name='BelgradeRealEstateAppAdventisrealestate',
-      version='0.1',
+      version='0.2',
       description='Script that runs a web scraper in a background and gets all available real estates in Belgrade, '
                   'and filters them by given parameters.',
       long_description=__doc__,
@@ -34,6 +34,7 @@ setup(name='BelgradeRealEstateAppAdventisrealestate',
       author='Uros Jevremovic',
       author_email='jevremovic.uros91@gmail.com',
       packages=['RealEstateApp'],
+      install_requires=['BeautfiulSoup4', 'requests'],
       entry_points={
           "console_scripts": ["belgrade_real_estates_adventis=RealEstateApp.real_estate_app:main"],
       },
