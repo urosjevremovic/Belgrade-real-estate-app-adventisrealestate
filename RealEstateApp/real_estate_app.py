@@ -85,8 +85,8 @@ def main():
 
                 csv_writer.writerow([price, location, size, link])
 
-                if soup.find('li', {'class': 'next'}) is None:
-                    finished = True
+            if soup.find('li', {'class': 'next'}) is None:
+                finished = True
 
 
 if __name__ == '__main__':
